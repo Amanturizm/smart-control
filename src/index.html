@@ -5,24 +5,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Control</title>
-  <link rel="icon" type="image/x-icon" href="./assets/images/smart-control-favicon.png" style="">
+  <link rel="icon" type="image/x-icon" href="./assets/images/smart-control-favicon.png">
   <meta name="description" content="Превращаем цифры в вашу стратегическую выгоду!">
-  <meta name="keywords" content="smart, control">
   <meta name="author" content="Indira">
 </head>
 <body>
-  <div class="px-8">
-    <header class="py-8">
-      <img src="./assets/images/smart-control-logo.png" alt="img" class="w-96"/>
-    </header>
+  <header class="p-8 flex items-center gap-8 w-full fixed top-0 transition-all duration-200 ease-linear">
+    <img src="./assets/images/smart-control-logo.png" alt="logo-img"
+         class="w-72 transition-all duration-200 ease-linear"/>
 
-    <main>
+    <nav class="flex gap-4 text-xl">
+      <a href="#" class="hover:text-red-500 ease-linear duration-200">Услуги</a>
+      <a href="#" class="hover:text-red-500 ease-linear duration-200">Отзывы</a>
+    </nav>
+  </header>
 
-    </main>
+  <main class="px-8">
+    <div class="w-14 h-14 fixed right-8 bottom-8">
+      <div class="absolute bottom-20 overflow-hidden">
+        <div id="contacts-links" class="hidden flex-col gap-2 select-none">
+          <img src="assets/images/telegram.svg" alt="telegram-img" class="w-14 h-14 rounded-full cursor-pointer">
+          <img src="./assets/images/whatsapp.svg" alt="whatsapp-img" class="w-14 h-14 rounded-full cursor-pointer">
+          <img src="./assets/images/instagram.jpg" alt="instagram-img" class="w-14 h-14  rounded-full cursor-pointer">
+        </div>
+      </div>
 
-    <footer>
+      <div id="contacts">
+        <div id="contacts-rings" class="absolute w-full h-full cursor-pointer z-10">
+          <div class="ring1"></div>
+          <div class="ring1 ring2"></div>
+          <div class="ring1 ring3"></div>
+        </div>
+        <img
+          id="contacts-icon"
+          src="./assets/images/contacts.png"
+          alt="contacts-img"
+          class="absolute w-full h-full cursor-pointer z-20"
+        />
+      </div>
+    </div>
+  </main>
 
-    </footer>
-  </div>
+  <footer>
+
+  </footer>
 </body>
 </html>

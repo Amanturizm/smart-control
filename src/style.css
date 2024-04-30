@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+main {
+    height: 2000px;
+}
+
+.header-scrolled {
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: #ddd;
+}
+
+.ring1 {
+    border: 2.5px solid rgb(14 165 233);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.ring2 {
+    animation-delay: 1.7s;
+}
+
+.ring3 {
+    animation-delay: 1.4s;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(.5, .5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2, 2);
+        opacity: 0;
+    }
+}
